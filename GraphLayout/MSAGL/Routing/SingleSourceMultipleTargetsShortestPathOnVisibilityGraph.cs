@@ -6,7 +6,9 @@ using Microsoft.Msagl.Core.Geometry.Curves;
 using Microsoft.Msagl.Routing.Visibility;
 
 namespace Microsoft.Msagl.Routing {
-    
+    /// <summary>
+    /// 图——单源点 多目标点最短路径类
+    /// </summary>
     internal class SingleSourceMultipleTargetsShortestPathOnVisibilityGraph {
         //we are not using the A* algorithm since it does not make much sense for muliple targets
         //but we use the upper bound heuristic

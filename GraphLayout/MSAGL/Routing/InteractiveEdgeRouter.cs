@@ -1630,7 +1630,12 @@ namespace Microsoft.Msagl.Routing {
             throw new InvalidOperationException();
 
         }
-
+        /// <summary>
+        /// 获取途径多目标点的最短多段线
+        /// </summary>
+        /// <param name="sourceVisVertex">起始节点</param>
+        /// <param name="targets">途经目标节点集合</param>
+        /// <returns></returns>
         Polyline GetShortestPolylineToMulitpleTargets(VisibilityVertex sourceVisVertex, IEnumerable<VisibilityVertex> targets) {
             CleanTheGraphForShortestPath();
             //ShowPolylineAndObstacles(targets.Select(t=>new Ellipse(3,3,t.Point)).ToArray());
